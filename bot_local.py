@@ -94,7 +94,7 @@ def ask_id_summary(message):
     sent = bot.send_message(chat_id, 'Choose campaign to be summarized:', reply_markup=markup)
 
     bot.register_next_step_handler(sent, send_summary)
-
+    pass
 def send_summary(message):
     # TO DO: chat_id (SAME AS CHECKPOINT 1)
     chat_id = message.from_user.id
